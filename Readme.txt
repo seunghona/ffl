@@ -16,7 +16,7 @@ The dataset/architecture pairs that are available are the ones described in the 
 The defense methods that can be used are "global" for FFL, "random" for random layer selection, "dp" for differential privacy, and "dgc" for deep gradient compression.
 In the case of "dgc" the ratio refers to the compression rate.
 
-data.tar.gz needs to be downloaded from from zenodo, due to its size (it has the model weights required).
+data.tar.gz needs to be downloaded from from zenodo (https://zenodo.org/record/7079413#.YyHlZHZBwuU), due to its size (contains the required model weights).
 After unpacking it so that there is a [data] folder in the working directory, the following can be done.
 
 syntax: 
