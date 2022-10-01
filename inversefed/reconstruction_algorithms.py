@@ -170,8 +170,9 @@ class GradientReconstructor():
             username =  arrange.gg_dir
             method = arrange.method
             
-            
-            globgrad = torch.load(os.path.dirname(__file__) + '/../'+username)
+            ex = input_data[0]
+            globgrad = torch.load(os.path.dirname(__file__) + '/../'+username, map_location=ex.device)
+
             
             if method == "dp": 
                 dropratio = 1.0
